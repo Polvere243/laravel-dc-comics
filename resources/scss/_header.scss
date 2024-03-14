@@ -1,0 +1,105 @@
+/* generico */
+.header-content {
+    height: 80px;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+/* utili */
+
+.top-background {
+    background-color: dodgerblue;
+}
+
+/* Contenitore in cima alla pagina */
+
+.top-page {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    span {
+        font-size: 14px;
+        color: white;
+        font-weight: 500;
+
+    }
+}
+
+/* immagine fluida */
+
+img {
+    max-width: 60px;
+}
+
+/* contenitori dei link */
+
+nav ul li {
+    height: 100%;
+    line-height: 80px;
+    vertical-align: middle;
+
+    /* link */
+    a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    &.active,
+    &:hover {
+        border-bottom: 4px solid dodgerblue;
+    }
+}
+
+/* modulo */
+
+form {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    input {
+        border: none;
+        border-bottom: 2px solid dodgerblue;
+    }
+
+    .fa-magnifying-glass {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+
+
+/* jumbotron */
+
+.jumbotron {
+    height: 500px;
+    background-image: url(../../public/images/jumbotron.jpg);
+    background-position: center, bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

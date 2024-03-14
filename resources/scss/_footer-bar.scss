@@ -1,0 +1,29 @@
+/* link alle sezioni del negozio */
+#shop-sections {
+    height: 100px;
+    background-color: dodgerblue;
+}
+
+.links-pic {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+
+    img {
+        max-width: 100%;
+        height: 35px;
+    }
+
+    li a {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+}
