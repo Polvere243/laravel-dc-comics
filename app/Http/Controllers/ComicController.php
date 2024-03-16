@@ -12,10 +12,9 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $title = 'Fumetti';
-        $comics = all();
+        $comics = Comic::all();
         
-        return view('products.index', compact('title', 'comics'));
+        return view('comics.index', compact('comics'));
     }
 
     /**
@@ -39,11 +38,12 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        if(!is_numeric($comic) || $comic < 0 || $comic >= count(config('comics'))){
+        
+        if(!is_numeric($comic) || $comic < 0){
             abort(404);
         }
-        $comics = all();
-        return view('comics.show', ['comic' => $comics[$comic]]);
+        
+        return view('comics.show', compact('comic'));
     }
 
     /**
