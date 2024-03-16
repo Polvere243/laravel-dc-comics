@@ -41,17 +41,13 @@
                 <tr>
                     <td>Art by:</td>
                     <td>
-                        @foreach($comic['artists'] as $artist)
-                            <span class="dodgerblue">{{$artist}},</span>
-                        @endforeach
+                       <span class="dodgerblue">{{$comic['artists']}},</span>
                     </td>
                 </tr>
                 <tr>
                     <td>Written by:</td>
                     <td>
-                        @foreach($comic['writers'] as $writer)
-                            <span class="dodgerblue">{{$writer}},</span>
-                        @endforeach
+                        <span class="dodgerblue">{{$comic['writers']}},</span>
                     </td>
                 </tr>
             </table>

@@ -38,11 +38,6 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        
-        if(!is_numeric($comic) || $comic < 0){
-            abort(404);
-        }
-        
         return view('comics.show', compact('comic'));
     }
 
