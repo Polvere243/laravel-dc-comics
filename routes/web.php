@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ComicController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,22 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // rotta per la pagina dei fumetti
-Route::get('/', function () {
-    $title = 'Fumetti';
-    $comics = config('comics');
-    
-    return view('products.index', compact('title', 'comics'));
-})->name('products.index');
+Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 
 // rotta per la pagina del singolo prodotto
-Route::get('/comics/{index}', function ($index) {
-    
-    if(!is_numeric($index) || $index < 0 || $index >= count(config('comics'))){
-        abort(404);
-    }
-    $comics = config('comics');
-    return view('products.show', ['comic' => $comics[$index]]);
-})->name('products.show');
+Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
 
 
 // rotta per la pagina dei personaggi
