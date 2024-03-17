@@ -1,3 +1,9 @@
-<div>
-    <!-- Simplicity is an acquired taste. - Katharine Gerould -->
-</div>
+@extends('layouts.main')
+
+@section('title', 'Crea un fumetto')
+
+@section('main')
+
+
+
+@endsection

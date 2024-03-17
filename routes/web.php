@@ -17,6 +17,9 @@ use App\Http\Controllers\ComicController;
 // rotta per la pagina dei fumetti
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 
+// rotta per la creazione
+Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
+
 // rotta per la pagina del singolo prodotto
 Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
 

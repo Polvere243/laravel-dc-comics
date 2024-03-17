@@ -13,7 +13,7 @@
         <a href="">
             <i class="fas fa-pencil"></i>
         </a>
-        <a href="">
+        <a href="{{ route('comics.create')}}">
             <i class="far fa-plus"></i>
         </a>
     </div>
