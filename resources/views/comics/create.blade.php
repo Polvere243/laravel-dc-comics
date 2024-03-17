@@ -14,21 +14,21 @@
             @csrf
             <div class="form-row">
                 <label for="title">Title</label>
-                <input type="text" id="title" name="title">
+                <input type="text" id="title" name="title" value="{{ old('title', '')}}>
                 <label for="thumb">Cover</label>
-                <input type="url" id="thumb" name="thumb">
+                <input type="url" id="thumb" name="thumb" value="{{ old('thumb', '')}}>
                 <label for="price">Price</label>
-                <input type="number" id="price" name="price" step="1">
+                <input type="number" id="price" name="price" step="1" value="{{ old('price', '')}}>
                 <label for="series">Series</label>
-                <input type="text" id="series" name="series">
+                <input type="text" id="series" name="series" value="{{ old('series', '')}}>
                 <label for="sale_date">On Sale Date</label>
-                <input type="date" id="sale_date" name="sale_date">
+                <input type="date" id="sale_date" name="sale_date" value="{{ old('sale_date', '')}}>
                 <label for="type">Type</label>
-                <input type="text" id="type" name="type">
+                <input type="text" id="type" name="type" value="{{ old('type', '')}}>
                 <label for="artists">Artists</label>
-                <input type="text" id="artists" name="artists">
+                <input type="text" id="artists" name="artists" value="{{ old('artists', '')}}>
                 <label for="writers">Writers</label>
-                <input type="text" id="writers" name="writers">
+                <input type="text" id="writers" name="writers" value="{{ old('writers', '')}}>
             </div>
             <div class="m-top">
                 <label for="description">Description</label>

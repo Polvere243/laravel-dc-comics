@@ -15,12 +15,12 @@
             </div>
             
             @endforeach
-            <div class="add-icon">
-                <a href="{{ route('comics.create')}}">
-                    <i class="far fa-plus"></i>
-                </a>
-    
-            </div>
+        </div>
+        <div class="add-icon">
+            <a href="{{ route('comics.create')}}">
+                <i class="far fa-plus"></i>
+            </a>
+
         </div>
         <div class="btn-box">
             <button class="more">
