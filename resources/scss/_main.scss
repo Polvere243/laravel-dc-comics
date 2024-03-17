@@ -67,6 +67,8 @@ figcaption {
     }
 }
 
+// pulsante per creare
+
 .add-icon {
     display: flex;
     justify-content: flex-end;
@@ -74,6 +76,9 @@ figcaption {
 
     a {
         color: white;
+        background-color: dodgerblue;
+        padding: 10px;
+        border-radius: 50%;
     }
 }
 
