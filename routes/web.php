@@ -27,6 +27,10 @@ Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.sh
 
 Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
 
+// rotta per modificare il modulo
+
+Route::get('/comics/edit',[ComicControlle::class, 'edit'])->name('comics.edit'); 
+
 // rotta per la pagina dei personaggi
 Route::get('/characters', function () {
     $title = 'characters';
