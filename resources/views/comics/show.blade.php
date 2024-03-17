@@ -10,7 +10,7 @@
         <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
     </figure>
     <div class="icon">
-        <a href="">
+        <a href="{{ route('comics.edit', $comic->id)}}">
             <i class="fas fa-pencil"></i>
         </a>
         
