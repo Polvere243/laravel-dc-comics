@@ -1,11 +1,19 @@
+// utili
+
+.m-top {
+    margin-top: 20px;
+}
+
 // contenitore del modulo
 
 .create-container {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     max-width: 1080px;
     margin: 20px auto;
     border-radius: 20px;
     padding: 20px;
+    border: 1px solid currentColor;
+    box-shadow: 10px 10px 5px lightgray;
 }
 
 // titolo e link
@@ -19,8 +27,26 @@
     a {
         padding: 5px 10px;
         background-color: dodgerblue;
-        text-decoration: none;
         color: white;
         border-radius: 10px;
     }
+}
+
+
+// modulo
+form {
+    display: block;
+
+    .form-row {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 20px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
 }
