@@ -25,7 +25,7 @@ Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.sh
 
 // rotta per salvare
 
-Route::post('/comics', [ComicController::class, 'store'])->name('comics.store')
+Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
 
 // rotta per la pagina dei personaggi
 Route::get('/characters', function () {

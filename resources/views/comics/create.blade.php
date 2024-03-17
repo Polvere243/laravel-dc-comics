@@ -10,7 +10,8 @@
         <h1>Crea un fumetto</h1>
         <a href="{{ route('comics.index')}}">Indietro</a>
     </div>    
-        <form action="" method="POST">
+        <form action="{{ route('comics.store')}}" method="POST">
+            @csrf
             <div class="form-row">
                 <label for="title">Title</label>
                 <input type="text" id="title" name="title">
