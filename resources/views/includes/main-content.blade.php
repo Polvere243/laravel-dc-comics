@@ -12,6 +12,7 @@
                         <h4>{{ $comic['title'] }}</h4>
                     </figcaption>
                 </a>
+                
             </div>
             
             @endforeach
