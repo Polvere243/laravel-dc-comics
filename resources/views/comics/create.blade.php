@@ -23,6 +23,8 @@
                 <input type="text" id="series" name="series">
                 <label for="sale_date">On Sale Date</label>
                 <input type="date" id="sale_date" name="sale_date">
+                <label for="type">Type</label>
+                <input type="text" id="type" name="type">
                 <label for="artists">Artists</label>
                 <input type="text" id="artists" name="artists">
                 <label for="writers">Writers</label>

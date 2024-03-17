@@ -32,13 +32,13 @@ class ComicController extends Controller
     {
         $data = $request->all();
 
-        $new_comic = new Comic();
+        $comic = new Comic();
         
-        $new_comic->fill($data);
+        $comic->fill($data);
         
-        $new_comic->save();
+        $comic->save();
 
-
+        return to_route('comics.show', $comic->id);
     }
 
     /**
