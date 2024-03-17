@@ -8,6 +8,7 @@
 .container {
     max-width: 1080px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 /* bottone */
@@ -63,6 +64,16 @@ figcaption {
     h4 {
         color: white;
         font-size: 14px;
+    }
+}
+
+.add-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+    a {
+        color: white;
     }
 }
 

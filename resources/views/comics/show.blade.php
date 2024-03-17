@@ -9,13 +9,11 @@
     <figure>
         <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
     </figure>
-    <div class="icons">
+    <div class="icon">
         <a href="">
             <i class="fas fa-pencil"></i>
         </a>
-        <a href="{{ route('comics.create')}}">
-            <i class="far fa-plus"></i>
-        </a>
+        
     </div>
 </div>
 <section id="comic-detail">

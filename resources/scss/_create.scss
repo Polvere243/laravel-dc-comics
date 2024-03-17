@@ -1,0 +1,26 @@
+// contenitore del modulo
+
+.create-container {
+    background-color: white;
+    max-width: 1080px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+// titolo e link
+
+.title-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid dodgerblue;
+
+    a {
+        padding: 5px 10px;
+        background-color: dodgerblue;
+        text-decoration: none;
+        color: white;
+        border-radius: 10px;
+    }
+}
