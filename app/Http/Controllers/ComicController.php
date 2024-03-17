@@ -32,7 +32,7 @@ class ComicController extends Controller
     {
 
         $data = $request-> validate([
-            'title' => 'unique|string|required:comics',
+            'title' => 'unique:comics|string|required',
             'description' => 'required|text',
             'thumb' => 'nullable|url:http, https',
             'price' => 'required|numeric',
