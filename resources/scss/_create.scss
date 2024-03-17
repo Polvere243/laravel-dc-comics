@@ -49,4 +49,24 @@ form {
         width: 100%;
     }
 
+    .btn-box {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        color: white;
+        border-radius: 10px;
+
+        &.sub {
+            background-color: dodgerblue;
+        }
+
+        &.res {
+            background-color: rgb(220, 56, 56);
+        }
+    }
+
 }
