@@ -33,7 +33,7 @@ class ComicController extends Controller
 
         $data = $request-> validate([
             'title' => 'unique:comics|string|required',
-            'description' => 'required|text',
+            'description' => 'required|string',
             'thumb' => 'nullable|url:http, https',
             'price' => 'required|numeric',
             'series' => 'required|string',
@@ -74,7 +74,13 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+        $data = $request->all();
+
+        $comic->fill($data);
+
+        $comic->save();
+
+        return to_route('comics.show', $comic->id);
     }
 
     /**

@@ -31,6 +31,9 @@ Route::get('/comics/{comic}/edit',[ComicController::class, 'edit'])->name('comic
 
 Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
 
+// rotta per rendirizzare la modifica
+
+Route::put('/comics/{comic}',[ComicController::class, 'update'])->name('comics.update');
 
 // rotta per la pagina dei personaggi
 Route::get('/characters', function () {

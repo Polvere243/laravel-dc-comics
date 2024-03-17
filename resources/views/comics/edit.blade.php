@@ -19,8 +19,9 @@
         </div>
     
     @endif
-        <form action="{{ route('comics.store')}}" method="POST">
+        <form action="{{ route('comics.update', $comic->id)}}" method="POST">
             @csrf
+            @method('PUT')
             <div class="form-row">
                 <label for="title">Title</label>
                 <input type="text" id="title" name="title" value="{{ old('title', $comic->title)}}">
@@ -45,7 +46,7 @@
             </div>
             <div class="btn-box">
                 <button class="res btn" type="reset">Empty</button>
-                <button class="sub btn" type="submit">Create</button>
+                <button class="sub btn" type="submit">Save</button>
             </div>
 
         </form>

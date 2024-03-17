@@ -46,7 +46,7 @@
             </div>
             <div class="btn-box">
                 <button class="res btn" type="reset">Empty</button>
-                <button class="sub btn" type="submit">Create</button>
+                <button class="sub btn" type="submit">Save</button>
             </div>
 
         </form>
