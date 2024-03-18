@@ -13,7 +13,7 @@
         <a href="{{ route('comics.edit', $comic->id)}}">
             <i class="fas fa-pencil"></i>
         </a>
-        <form action="" method="POST">
+        <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
             @csrf
             @method('DELETE')
             <button type="submit" class="dustbin"><i class="fas fa-trash-can"></i></button>

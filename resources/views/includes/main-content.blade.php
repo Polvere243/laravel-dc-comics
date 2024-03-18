@@ -12,7 +12,7 @@
                         <h4>{{ $comic['title'] }}</h4>
                     </figcaption>
                 </a>
-                <form method="POST">
+                <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="bin"><i class="fas fa-trash-can"></i></button>
