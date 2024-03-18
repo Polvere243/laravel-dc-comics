@@ -98,3 +98,24 @@ figcaption {
         font-size: 12px;
     }
 }
+
+.bin {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+    margin-top: 10px;
+}
+
+.fa-trash-can {
+    color: white;
+
+}
+
+div.card:hover .bin {
+    display: flex;
+}

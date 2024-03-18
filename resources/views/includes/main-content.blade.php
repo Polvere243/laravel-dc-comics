@@ -12,6 +12,11 @@
                         <h4>{{ $comic['title'] }}</h4>
                     </figcaption>
                 </a>
+                <form method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="bin"><i class="fas fa-trash-can"></i></button>
+                </form>
             </div>
             
             @endforeach
