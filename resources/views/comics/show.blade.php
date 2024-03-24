@@ -39,7 +39,7 @@
         <div class="adv">
             <h5>ADVERTISEMENT</h5>
             <figure>
-                <img class="adv-picture" src="{{ Vite::asset('resources/img/adv.jpg') }}""{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
+                <img class="adv-picture" src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
             </figure>
         </div>
         
