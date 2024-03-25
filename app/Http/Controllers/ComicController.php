@@ -77,7 +77,7 @@ class ComicController extends Controller
     {
         
         $data = $request-> validate([
-            'title' => [Rule::unique('comics')->ignore($comic->title), 'string', 'required'],
+            'title' => [Rule::unique('comics')->ignore($comic->id), 'string', 'required'],
             'description' => ['required', 'string'],
             'thumb' => ['nullable', 'url:http, https'],
             'price' => ['required', 'numeric'],
